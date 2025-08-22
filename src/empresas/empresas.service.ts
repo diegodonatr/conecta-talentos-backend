@@ -22,8 +22,8 @@ export class EmpresasService {
     this.empresas.push(empresaCreada);
   }
 
-  findAll() {
-    return `This action returns all empresas`;
+  findAll(): Empresa[] {
+    return this.empresas;
   }
 
   findOne(id: number): Empresa | undefined {
